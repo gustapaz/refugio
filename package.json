@@ -1,0 +1,30 @@
+{
+  "name": "refugio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev --host 127.0.0.1 --port 5192",
+    "build": "nuxt generate",
+    "preview": "node scripts/preview.mjs",
+    "test": "vitest run",
+    "check": "prettier --check app lib tests nuxt.config.ts",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "nuxt": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5",
+    "prettier": "^3.9.10",
+    "vue-tsc": "latest",
+    "@fontsource-variable/dm-sans": "latest",
+    "@fontsource-variable/fraunces": "latest"
+  },
+  "overrides": {
+    "glob": "^14.0.3",
+    "minimatch": "^11.0.3"
+  }
+}
