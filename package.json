@@ -9,7 +9,8 @@
     "preview": "node scripts/preview.mjs",
     "test": "vitest run",
     "check": "prettier --check app lib tests nuxt.config.ts",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "pretest": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "latest",

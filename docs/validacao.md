@@ -16,3 +16,5 @@ A auditoria inicial apontou avisos moderados em glob/minimatch transitivos do bu
 Restam sete entradas de severidade baixa no npm audit, propagadas a partir do mesmo aviso de deepmerge 4.3.1 na cadeia de ferramentas de compilação (@rollup/plugin-node-resolve/Nitro/Nuxt). Não havia versão corrigida publicada de deepmerge na consulta. A hospedagem recebe somente HTML, CSS, fontes e JavaScript de cliente; não executa essa cadeia de build como servidor. O projeto não importa deepmerge no código de aplicação nem processa configurações enviadas por visitantes. Não foi usado npm audit fix --force nem downgrade do framework para ocultar o resultado.
 
 Limites: progresso só neste navegador, dependência do relógio local e histórico limitado aos últimos 100 ciclos. Tempo decorrido não comprova foco. O TXT não restaura dados.
+
+O workflow em checkout limpo revelou que o Vitest precisava dos tipos gerados do Nuxt. O pretest executa nuxt prepare antes da suíte, sem depender de artefatos locais.
